@@ -50,6 +50,8 @@ body {
   line-height: 26px;
 }
 
+/* Main styles */
+
 .brand-design-1 {
   position: relative;
   top: -100px;
@@ -173,8 +175,6 @@ button {
 
 .disclaimer-text {
   width: 366px;
-  /* position: relative; */
-  /* left: -138px; */
 }
 
 .socials {
