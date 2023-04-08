@@ -16,12 +16,17 @@
   font-family: "IBM Plex Sans", sans-serif;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background-image: url(./assets/bg-main-desktop.png);
   background-position: center;
   height: 100%;
   max-width: 1440px;
-  padding: 62px max(165px, 5%);
+  padding: 62px 165px;
   margin: 0 auto;
 }
 
@@ -186,7 +191,14 @@ button:hover {
 }
 
 .disclaimer-text {
-  width: 366px;
+  max-width: 366px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.email {
+  font-weight: 700;
 }
 
 .socials {
@@ -217,7 +229,7 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
   body {
     height: 100%;
     width: 100%;
@@ -244,11 +256,8 @@ button:hover {
   .brand-design-1 {
     width: 266px;
     height: 400px;
-    left: 0;
-    top: 0;
-    clip-path: inset(10% 15% 0 0);
-    /* top: -95px;
-    right: -100px; */
+    top: -95px;
+    right: -60px;
   }
 
   .title {
@@ -263,6 +272,7 @@ button:hover {
   .main-section {
     max-width: 696px;
     height: 600px;
+    margin-top: -89px;
   }
 
   .phone-img {
@@ -314,5 +324,88 @@ button:hover {
   .footer-name {
     margin-right: 500px;
     margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .h1 {
+    line-height: 90px;
+  }
+}
+@media screen and (max-width: 500px) {
+.h1 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.body-1 {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+body {
+  padding: 40px 0 80px 0;
+}
+
+  .brand-design-1 {
+    display: none;
+  }
+
+  .header{
+    margin: 0 24px;
+  }
+
+  .title {
+    margin: 64px 0 20px 0;
+  }
+
+  .main-section {
+    width: 375px;
+    flex-direction: column;
+  }
+
+  .phone-img {
+    width: 208px;
+    height: 430px;
+    left: 0px;
+    bottom: -300px;
+  }
+
+  .brand-design-2 {
+    width: 280px;
+    height: 420px;
+    top: -35px;
+    left: 0px;
+  }
+
+  .sales-card {
+    width: 375px;
+    height: 546px;
+    top: -70px;
+    right: 0;
+  }
+
+  main {
+    height: 100%;
+  }
+
+  .footer {
+    height: 253px;
+    max-width: 327px;
+    margin: 380px auto 0 auto;
+  }
+
+  .footer-name {
+    margin-right: 0
+  }
+
+  .disclaimer-text{
+    max-width: 327px;
+    margin-bottom: 64px;
+    left: 0;
+  }
+
+  .socials {
+    margin-bottom: 80px;
   }
 }
