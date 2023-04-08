@@ -163,6 +163,11 @@ button:hover {
   margin-bottom: 16px;
 }
 
+.android-btn {
+  background-color: var(--white);
+  color: var(--mid-black);
+}
+
 .btn-name {
   margin: 3px 0 0 8px;
 }
@@ -314,6 +319,7 @@ button:hover {
   }
 
   button {
+    width: 296px;
     width: 296px;
   }
 
